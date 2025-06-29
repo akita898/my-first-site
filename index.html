@@ -1,11 +1,295 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <title>Hello GitHub Pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="西新宿のカフェ、Café de Paris。20-30代の方々に寛ぎの空間とパリの雰囲気をお届けします。">
+    <title>Café de Paris - 西新宿のくつろぎカフェ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>はじめてのGitHub Pages!</h1>
-    <p>これが公開されるページです。</p>
+    <!-- サイト全体を囲むコンテナ -->
+    <div id="container">
+
+        <!-- トップに戻るためのアンカー -->
+        <div id="top"></div>
+
+        <!-- ヘッダーナビゲーター -->
+        <header class="navbar">
+            <nav>
+                <h1 class="logo">
+                    <a href="#top">
+                        <img src="images/logo.svg" alt="Café de Paris Logo">
+                    </a>
+                </h1>
+
+                <ul class="nav-links">
+                    <li><a href="#ambiance">Café de Paris とは</a></li>
+                    <li><a href="#drink">メニュー</a></li>
+                    <li><a href="#contact">アクセス</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ヒーローエリア -->
+        <div class="parallax ambiance-parallax">
+            <div class="content">
+                <h2>
+                    <span class="line1">Welcome to</span>
+                    <span class="line2">Café de Paris</span>
+                </h2>
+                <p>
+                    <span class="line1">西新宿で過ごす</span>
+                    <span class="line2">パリのようなひととき</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- メインエリアー -->
+        <div class="container main-container">
+            <main id="main">
+
+                <!-- カフェ紹介エリア -->
+                <section id="ambiance" class="section-block">
+                    <h2 class="section-title">Café de Paris とは</h2>
+                    <div class="section-content">
+
+                        <!-- バーカウンター -->
+                        <div class="parallax bar-counter-parallax">
+                            <div class="content">
+                                <h3>
+                                    <span class="line1">バーカウンターで味わう</span>
+                                    <span class="line2">本場の雰囲気</span>
+                                </h3>
+                                <p>
+                                    <span class="line1">お気に入りのドリンクで</span>
+                                    <span class="line2">心安らぐ時間を</span>
+                                </p>
+                                <a href="#drink" class="btn-access">おすすめのドリンクを見る</a>
+                            </div>
+                        </div>
+
+                        <!-- テーブル -->
+                        <div class="parallax chairs-parallax">
+                            <div class="content">
+                                <h3>
+                                    <span class="line1">リラックスできる</span>
+                                    <span class="line2">特別な場所</span>
+                                </h3>
+                                <p>
+                                    <span class="line1">お二人だけのランチタイムに</span>
+                                    <span class="line2">いかがですか</span>
+                                </p>
+                                <a href="#setmenu" class="btn-access">日替わりセットメニューを見る</a>
+                            </div>
+                        </div>
+
+                        <!-- アクセスアピール -->
+                        <div class="parallax access-parallax">
+                            <div class="content">
+                                <h3>
+                                    西新宿交通の便良し
+                                </h3>
+                                <p>
+                                    お集まり・ショッピングに最適
+                                </p>
+                                <a href="#contact" class="btn-access">アクセス詳細を見る</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ドリンクメニューエリア -->
+                <section id="drink" class="menu-section">
+                    <h2 class="section-title">
+                        <span class="line1">おすすめの</span>
+                        <span class="line2">ドリンクメニュー</span>
+                    </h2>
+
+
+                    <div class="menu-container">
+                        <div class="menu-grid">
+
+                            <!-- 朝のおすすめドリンク -->
+                            <div class="menu-card drink-card drink-morning">
+                                <div id="morning-drink" class="menu-card-content">
+                                    <h3>Morning Breeze Blend</h3>
+                                    <p class="menu-description">
+                                        <span class="line1">一日の始まりに</span>
+                                        <span class="line2">香り高い一杯を</span>
+                                    </p>
+                                    <p class="menu-price">￥500</p>
+                                    <a href="#morning-set" class="btn-access">朝のおすすめセット</a>
+                                </div>
+                            </div>
+
+                            <!-- ランチのおすすめドリンク -->
+                            <div class="menu-card drink-card drink-lunch">
+                                <div id="lunch-drink" class="menu-card-content">
+                                    <h3>Crisp Lemon Iced Tea</h3>
+                                    <p class="menu-description">
+                                        <span class="line1">食事に寄り添う</span>
+                                        <span class="line2">すっきりとした爽かさ</span>
+                                    </p>
+                                    <p class="menu-price">￥600</p>
+                                    <a href="#lunch-set" class="btn-access">ランチのおすすめセット</a>
+                                </div>
+                            </div>
+
+                            <!-- 午後のおすすめドリンク -->
+                            <div class="menu-card drink-card drink-refresh">
+                                <div id="refresh-drink" class="menu-card-content">
+                                    <h3>Velvet Café Latte</h3>
+                                    <p class="menu-description">
+                                        <span class="line1">甘い時間には</span>
+                                        <span class="line2">まろやかな一杯を</span>
+                                    </p>
+                                    <p class="menu-price">￥650</p>
+                                    <a href="#refresh-set" class="btn-access">午後のおすすめセット</a>
+                                </div>
+                            </div>
+
+                            <!-- 夜のおすすめドリンク -->
+                            <div class="menu-card drink-card drink-night">
+                                <div id="night-drink" class="menu-card-content">
+                                    <h3>Twilight Red Reserve</h3>
+                                    <p class="menu-description">
+                                        <span class="line1">夜を彩る</span>
+                                        <span class="line2">優雅なひとときを</span>
+                                    </p>
+                                    <p class="menu-price">￥900</p>
+                                    <a href="#night-set" class="btn-access">夜のおすすめセット</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- セットメニューエリア -->
+                <section id="setmenu" class="menu-section">
+                    <h2 class="section-title">
+                        <span class="line1">おすすめの</span>
+                        <span class="line2">セットメニュー</span>
+                    </h2>
+                    <div class="menu-container">
+                        <div class="menu-grid">
+
+                            <!-- 朝のおすすめセット -->
+                            <div class="menu-card set-card morning-set">
+                                <div id="morning-set" class="menu-card-content">
+                                    <h3>新宿朝活セット</h3>
+                                    <p class="menu-time">6:00-10:00</p>
+                                    <p class="menu-description">
+                                        <span class="line1">早朝のエネルギー</span>
+                                        <span class="line2">チャージセット</span>
+                                    </p>
+                                    <p class="menu-price">お好きなドリンク＋￥200</p>
+                                    <a href="#morning-drink" class="btn-access">おすすめドリンク</a>
+                                </div>
+                            </div>
+
+                            <!-- ランチのおすすめセット -->
+                            <div class="menu-card set-card lunch-set">
+                                <div id="lunch-set" class="menu-card-content">
+                                    <h3>オフィスランチ</h3>
+                                    <p class="menu-time">11:00-14:00</p>
+                                    <p class="menu-description">
+                                        <span class="line1">日替わりパスタ</span>
+                                        <span class="line2">カレーでリフレッシュ</span>
+                                    </p>
+                                    <p class="menu-price">お好きなドリンク＋￥500</p>
+                                    <a href="#lunch-drink" class="btn-access">おすすめドリンク</a>
+                                </div>
+                            </div>
+
+                            <!-- 午後のおすすめセット -->
+                            <div class="menu-card set-card refresh-set">
+                                <div id="refresh-set" class="menu-card-content">
+                                    <h3>午後のマカロンセット</h3>
+                                    <p class="menu-time">14:00-17:00</p>
+                                    <p class="menu-description">
+                                        <span class="line1">特製マカロンと</span>
+                                        <span class="line2">ラテでほっと一息</span>
+                                    </p>
+                                    <p class="menu-price">お好きなドリンク＋￥500</p>
+                                    <a href="#refresh-drink" class="btn-access">おすすめドリンク</a>
+                                </div>
+                            </div>
+
+                            <!-- 夜のおすすめセット -->
+                            <div class="menu-card set-card night-set">
+                                <div id="night-set" class="menu-card-content">
+                                    <h3>ナイトカフェセット</h3>
+                                    <p class="menu-time">17:00-22:00</p>
+                                    <p class="menu-description">
+                                        <span class="line1">焼きたてピザと</span>
+                                        <span class="line2">選べるドリンク</span>
+                                    </p>
+                                    <p class="menu-price">お好きなドリンク＋￥900</p>
+                                    <a href="#night-drink" class="btn-access">おすすめドリンク</a>
+                                </div>
+                            </div>
+                        </div><!-- menu-gridの閉じタグ -->
+                    </div><!-- menu-containerの閉じタグ -->
+                </section>
+
+                <!-- 新着エリア -->
+                <section id="news" class="section-block">
+                    <h2 class="section-title">新着</h2>
+                    <div class="news-container">
+                        <ul class="news-list">
+                            <li>
+                                <time datetime="20XX-10-11">20XX.10.11</time>
+                                <span class="news-content">新規サイトオープン企画</span>
+                                <span class="news-content">Webサイトを見て特製ケーキをもらおう！</span>
+                            </li>
+                            <li>
+                                <time datetime="20XX-10-11">20XX.10.11</time>
+                                <span class="news-content">新作マカロン登場！！</span>
+                            </li>
+                            <li>
+                                <time datetime="20XX-10-10">20XX.10.10</time>
+                                <span class="news-content">お待たせ致しました！</span>
+                                <span class="news-content">カフェ・ド・パリWebサイトをオープン致しました。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div><!-- main-containerの閉じタグ -->
+
+        <!-- トップに戻るボタン -->
+        <a href="#top" id="back-to-top" aria-label="トップに戻る"></a>
+
+        <!-- フッターエリア -->
+        <footer id="contact">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2>Access</h2>
+                    <address>
+                        <p>〒160-0023</p>
+                        <p>東京都新宿区西新宿1-2-3</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>営業時間: 6:00 - 22:00</p>
+                    </address>
+                </div>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.40311410714!2d139.69497721511178!3d35.69169648019181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd699cedc77%3A0xef95ab126bbda1b7!2z44Oi44O844OJ5a2m5ZyS44Kz44Kv44O844Oz44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1574222020587!5m2!1sja!2sjp"
+                        width="340" height="225" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Café de Paris All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div><!-- containerの閉じタグ -->
+
 </body>
+
 </html>
